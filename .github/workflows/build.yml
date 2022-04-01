@@ -437,9 +437,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/appstore-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/appstore-app-cert.p12.gpg"
-          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/appstore-installer-cert.p12" \
-            "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
+          # gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+          #   --output "$HOME/secrets/appstore-installer-cert.p12" \
+          #   "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/devid-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/devid-app-cert.p12.gpg"
@@ -586,9 +586,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/appstore-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/appstore-app-cert.p12.gpg"
-          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/appstore-installer-cert.p12" \
-            "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
+          # gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+          #   --output "$HOME/secrets/appstore-installer-cert.p12" \
+          #   "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/devid-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/devid-app-cert.p12.gpg"
@@ -778,9 +778,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/appstore-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/appstore-app-cert.p12.gpg"
-          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/appstore-installer-cert.p12" \
-            "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
+          # gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+          #   --output "$HOME/secrets/appstore-installer-cert.p12" \
+          #   "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/devid-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/devid-app-cert.p12.gpg"
@@ -962,9 +962,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/appstore-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/appstore-app-cert.p12.gpg"
-          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/appstore-installer-cert.p12" \
-            "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
+          # gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+          #   --output "$HOME/secrets/appstore-installer-cert.p12" \
+          #   "$GITHUB_WORKSPACE/.github/secrets/appstore-installer-cert.p12.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/devid-app-cert.p12" \
             "$GITHUB_WORKSPACE/.github/secrets/devid-app-cert.p12.gpg"
