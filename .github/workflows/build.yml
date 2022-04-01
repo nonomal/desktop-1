@@ -611,6 +611,7 @@ jobs:
           DESKTOP_KEY_PASSWORD: ${{ secrets.DESKTOP_KEY_PASSWORD }}
           DEVID_CERT_PASSWORD: ${{ secrets.DEVID_CERT_PASSWORD }}
           APPSTORE_CERT_PASSWORD: ${{ secrets.APPSTORE_CERT_PASSWORD }}
+          APPSTORE_APP_CERT_PASSWORD: ${{ secrets.APPSTORE_APP_CERT_PASSWORD }}
           MACDEV_CERT_PASSWORD: ${{ secrets.MACDEV_CERT_PASSWORD }}
           APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
         run: |
@@ -618,13 +619,13 @@ jobs:
           security default-keychain -s build.keychain
           security unlock-keychain -p $KEYCHAIN_PASSWORD build.keychain
           security set-keychain-settings -lut 1200 build.keychain
-          security import "$HOME/secrets/bitwarden-desktop-key.p12" -k build.keychain -P $DESKTOP_KEY_PASSWORD \
+          security import "$HOME/secrets/bitwarden-desktop-key.p12" -k build.keychain -P $APPSTORE_APP_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
           security import "$HOME/secrets/devid-app-cert.p12" -k build.keychain -P $DEVID_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
           security import "$HOME/secrets/devid-installer-cert.p12" -k build.keychain -P $DEVID_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
-          security import "$HOME/secrets/appstore-app-cert.p12" -k build.keychain -P $APPSTORE_CERT_PASSWORD \
+          security import "$HOME/secrets/appstore-app-cert.p12" -k build.keychain -P $APPSTORE_APP_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
           security import "$HOME/secrets/appstore-installer-cert.p12" -k build.keychain -P $APPSTORE_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
@@ -801,6 +802,7 @@ jobs:
           DESKTOP_KEY_PASSWORD: ${{ secrets.DESKTOP_KEY_PASSWORD }}
           DEVID_CERT_PASSWORD: ${{ secrets.DEVID_CERT_PASSWORD }}
           APPSTORE_CERT_PASSWORD: ${{ secrets.APPSTORE_CERT_PASSWORD }}
+          APPSTORE_APP_CERT_PASSWORD: ${{ secrets.APPSTORE_APP_CERT_PASSWORD }}
           MACDEV_CERT_PASSWORD: ${{ secrets.MACDEV_CERT_PASSWORD }}
           APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
         run: |
@@ -808,13 +810,13 @@ jobs:
           security default-keychain -s build.keychain
           security unlock-keychain -p $KEYCHAIN_PASSWORD build.keychain
           security set-keychain-settings -lut 1200 build.keychain
-          security import "$HOME/secrets/bitwarden-desktop-key.p12" -k build.keychain -P $DESKTOP_KEY_PASSWORD \
+          security import "$HOME/secrets/bitwarden-desktop-key.p12" -k build.keychain -P $APPSTORE_APP_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
           security import "$HOME/secrets/devid-app-cert.p12" -k build.keychain -P $DEVID_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
           security import "$HOME/secrets/devid-installer-cert.p12" -k build.keychain -P $DEVID_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
-          security import "$HOME/secrets/appstore-app-cert.p12" -k build.keychain -P $APPSTORE_CERT_PASSWORD \
+          security import "$HOME/secrets/appstore-app-cert.p12" -k build.keychain -P $APPSTORE_APP_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
           security import "$HOME/secrets/appstore-installer-cert.p12" -k build.keychain -P $APPSTORE_CERT_PASSWORD \
             -T /usr/bin/codesign -T /usr/bin/security -T /usr/bin/productbuild
