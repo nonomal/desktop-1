@@ -452,6 +452,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/bitwarden_desktop_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_desktop_appstore.provisionprofile.gpg"
+          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+            --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
+            "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -484,8 +487,8 @@ jobs:
       - name: Set up provisioning profiles
         shell: bash
         run: |
-          cp $HOME/secrets/bitwarden_desktop_appstore.provisionprofile \
-            $GITHUB_WORKSPACE/bitwarden_desktop_appstore.provisionprofile
+          cp $HOME/secrets/*.provisionprofile \
+            $GITHUB_WORKSPACE/*.provisionprofile
 
       - name: Increment version
         shell: pwsh
@@ -596,6 +599,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/bitwarden_desktop_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_desktop_appstore.provisionprofile.gpg"
+          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+            --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
+            "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -628,8 +634,8 @@ jobs:
       - name: Set up provisioning profiles
         shell: bash
         run: |
-          cp $HOME/secrets/bitwarden_desktop_appstore.provisionprofile \
-            $GITHUB_WORKSPACE/bitwarden_desktop_appstore.provisionprofile
+          cp $HOME/secrets/*.provisionprofile \
+            $GITHUB_WORKSPACE/*.provisionprofile
 
       - name: Increment version
         shell: pwsh
@@ -783,6 +789,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/bitwarden_desktop_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_desktop_appstore.provisionprofile.gpg"
+          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+            --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
+            "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -815,8 +824,8 @@ jobs:
       - name: Set up provisioning profiles
         shell: bash
         run: |
-          cp $HOME/secrets/bitwarden_desktop_appstore.provisionprofile \
-            $GITHUB_WORKSPACE/bitwarden_desktop_appstore.provisionprofile
+          cp $HOME/secrets/*.provisionprofile \
+            $GITHUB_WORKSPACE/*.provisionprofile
 
       - name: Increment version
         shell: pwsh
@@ -962,6 +971,9 @@ jobs:
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
             --output "$HOME/secrets/bitwarden_desktop_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_desktop_appstore.provisionprofile.gpg"
+          gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
+            --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
+            "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -994,8 +1006,8 @@ jobs:
       - name: Set up provisioning profiles
         shell: bash
         run: |
-          cp $HOME/secrets/bitwarden_desktop_appstore.provisionprofile \
-            $GITHUB_WORKSPACE/bitwarden_desktop_appstore.provisionprofile
+          cp $HOME/secrets/*.provisionprofile \
+            $GITHUB_WORKSPACE/*.provisionprofile
 
       - name: Increment version
         shell: pwsh
