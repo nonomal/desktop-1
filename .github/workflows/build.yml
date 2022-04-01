@@ -489,7 +489,7 @@ jobs:
         shell: bash
         run: |
           cp $HOME/secrets/*.provisionprofile \
-            $GITHUB_WORKSPACE/*.provisionprofile
+            $GITHUB_WORKSPACE/
 
       - name: Increment version
         shell: pwsh
@@ -636,7 +636,7 @@ jobs:
         shell: bash
         run: |
           cp $HOME/secrets/*.provisionprofile \
-            $GITHUB_WORKSPACE/*.provisionprofile
+            $GITHUB_WORKSPACE/
 
       - name: Increment version
         shell: pwsh
@@ -826,7 +826,7 @@ jobs:
         shell: bash
         run: |
           cp $HOME/secrets/*.provisionprofile \
-            $GITHUB_WORKSPACE/*.provisionprofile
+            $GITHUB_WORKSPACE/
 
       - name: Increment version
         shell: pwsh
@@ -1008,7 +1008,7 @@ jobs:
         shell: bash
         run: |
           cp $HOME/secrets/*.provisionprofile \
-            $GITHUB_WORKSPACE/*.provisionprofile
+            $GITHUB_WORKSPACE/
 
       - name: Increment version
         shell: pwsh
