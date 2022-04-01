@@ -456,8 +456,8 @@ jobs:
             --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/mas-distribution-cert.p12.gpg" \
-            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12"
+            --output "$HOME/secrets/mas-distribution-cert.p12" \
+            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -610,8 +610,8 @@ jobs:
             --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/mas-distribution-cert.p12.gpg" \
-            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12"
+            --output "$HOME/secrets/mas-distribution-cert.p12" \
+            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -807,8 +807,8 @@ jobs:
             --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/mas-distribution-cert.p12.gpg" \
-            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12"
+            --output "$HOME/secrets/mas-distribution-cert.p12" \
+            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12.gpg"
 
       - name: Set up keychain
         shell: bash
@@ -996,8 +996,8 @@ jobs:
             --output "$HOME/secrets/bitwarden_safari_appstore.provisionprofile" \
             "$GITHUB_WORKSPACE/.github/secrets/bitwarden_safari_appstore.provisionprofile.gpg"
           gpg --quiet --batch --yes --decrypt --passphrase="$DECRYPT_FILE_PASSWORD" \
-            --output "$HOME/secrets/mas-distribution-cert.p12.gpg" \
-            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12"
+            --output "$HOME/secrets/mas-distribution-cert.p12" \
+            "$GITHUB_WORKSPACE/.github/secrets/mas-distribution-cert.p12.gpg"
 
       - name: Set up keychain
         shell: bash
