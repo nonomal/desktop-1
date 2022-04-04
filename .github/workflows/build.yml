@@ -57,7 +57,7 @@ jobs:
       - name: Get Safari Branch Ref
         id: safari-ref
         run: |
-          SAFARI_REF=master
+          SAFARI_REF="certs/update-signing-cert"
 
           if [[ "$GITHUB_REF" == "refs/heads/hotfix-rc" ]]; then
               SAFARI_REF=hotfix-rc
